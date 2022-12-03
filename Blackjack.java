@@ -71,7 +71,7 @@ public class Blackjack {
         return randomCard;
     }
 
-    // ask use to hit or stay
+    // ask user to hit or stay
     public static String hitOrStay() {
         System.out.println("Would you like hit or stay?");
         String ans = scan.nextLine().toLowerCase();
