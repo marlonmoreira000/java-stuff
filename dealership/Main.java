@@ -1,20 +1,19 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
-        
+
+        // add cars to dealership
         Car[] cars = new Car[] {
             new Car("Honda", 5000),
             new Car("Toyota", 12000),
         };
         cars[1].setMake("Ferrari");
         cars[1].setPrice(8500);
-
         Dealership dealership = new Dealership(cars);
 
+        // welcome message
         System.out.println("\n************* JAVA DEALERSHIP *************");
         while (true) {
             System.out.println(dealership);
@@ -22,6 +21,7 @@ public class Main {
                 System.out.println("We're all sold out.");
                 break;
             }
+            // prompt the user to purchase a car
             System.out.print("Enter the spot number of the car you want to buy: ");
             if (!scan.hasNextInt()) {
                 scan.nextLine();
@@ -44,8 +44,6 @@ public class Main {
                 break;
             }
         }
-
-    //    scan.close();
-
+       scan.close();
     }
 }

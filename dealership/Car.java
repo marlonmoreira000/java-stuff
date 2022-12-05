@@ -13,10 +13,11 @@ public class Car {
         this.price = price;
     }
 
-    public Car(Car source) { 
-            this.make = source.make;
-            this.price = source.price;    
+    public Car(Car source) {
+        this.make = source.make;
+        this.price = source.price;
     }
+    
     public String getMake() {
         return this.make;
     }
@@ -39,6 +40,7 @@ public class Car {
         this.price = price;
     }
 
+    // print a message saying you've purchased the car
     public void drive() {
         System.out.println("\nYou bought the beautiful " + this.make + " for " + this.price + ".");
         System.out.println("Please drive your car to the nearest exit.\n");

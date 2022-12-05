@@ -19,6 +19,7 @@ public class Dealership {
         return new Car(this.cars[index]);
     }
     
+    // remove a car from the dealership after sale
     public void sell(int index) {
         if (this.isEmpty()) {
             throw new IllegalStateException("can't sell car because dealership is empty");
@@ -27,6 +28,7 @@ public class Dealership {
         this.cars[index] = null;
     }
 
+    // check if the dealership has any cars
     public boolean isEmpty() {
         for (int i = 0; i < cars.length; i++) {
             if (cars[i] != null) {
@@ -36,6 +38,7 @@ public class Dealership {
         return true;
     }
     
+    // check how many total spots are in the dealership
     public int getLength() {
         return this.cars.length;
     }
