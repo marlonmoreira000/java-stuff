@@ -17,7 +17,6 @@ public class Main {
         } finally {
             System.out.println("Process Comlpete");
         }
-
     }
 
     // prompt the user to manage the contacts in the contact manager collection
